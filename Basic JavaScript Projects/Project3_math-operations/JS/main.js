@@ -13,28 +13,28 @@ function minusTwo()     {
 
 function multiplication()       {
     var simple_math = 8 * 7;
-    document.getElementById("math").innerHTML = "8 * 7 =" + simple_math;
+    document.getElementById("math1").innerHTML = "8 * 7 =" + simple_math;
 }
 
 function division()     {
     var simple_math = 9 / 3;
-    document.getElementById("math").innerHTML = "9 / 3 =" + simple_math;
+    document.getElementById("math1").innerHTML = "9 / 3 =" + simple_math;
 }
 
 function mathExplosion()    {
     var all_math = (3 + 5) * 8 / 2 -3;
-    document.getElementById("math").innerHTML = "3 plus 5 multiplied by 8 divided in half minus 3 equals " + all_math;
+    document.getElementById("math2").innerHTML = "3 plus 5 multiplied by 8 divided in half minus 3 equals " + all_math;
 
 }
 
 function modOp()    {
     var remaindMath = 8 % 3;
-    document.getElementById("math").innerHTML = "When you divide 8 by 3 your remainder is " +remaindMath;
+    document.getElementById("math3").innerHTML = "When you divide 8 by 3 your remainder is " +remaindMath;
 }
 
 function negation_Operation()   {
     var x = 14
-    document.getElementById("math").innerHTML = -x;
+    document.getElementById("math4").innerHTML = -x;
 }
 
 function incrementNumber()      {
@@ -48,4 +48,13 @@ function decrementNumber()   {
     y--;
     document.write(y);
 
+}
+
+function mathRandom()   {
+    window.alert(Math.random() * 100);
+    
+}
+
+function mathRound()    {
+  window.alert ( Math.round(8.2));
 }
