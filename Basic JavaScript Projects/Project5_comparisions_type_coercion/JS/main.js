@@ -1,47 +1,47 @@
 function typeString()   {
-    var name = "Stan"
-    document.write(typeof "Word");
+    var name = "Stan"       //defining string variable
+    document.write(typeof "Word");  //writing type of data to screen
 }
 
 function test_Nan()    {
-    var A = "Earth"
-    document.getElementById("Test").innerHTML = isNaN('Earth');
+    var A = "Earth"         //Defining variable for nan test
+    document.getElementById("Test").innerHTML = isNaN('Earth');     //Getting element to test for nan and writing result to screen
     
 }
 
 function test1_Nan()    {
-    var B = "7.42"
-    document.getElementById("Test").innerHTML = isNaN('7.42');
+    var B = "7.42"          //Defining numeral as string to test for nan
+    document.getElementById("Test").innerHTML = isNaN('7.42');      //getting element to test for nan and writing result to screen
 }
 
 function too_Large()    {
-    var bigNum = 23000000000000000000000E308;
-    document.getElementById("infinite").innerHTML = bigNum;
+    var bigNum = 23000000000000000000000E308;       //Defining numeric variable to test for infinity type 
+    document.getElementById("infinite").innerHTML = bigNum;     //Getting element to test for infinite case
 }
 
 function too_Small()    {
-    var smallNum = -5000000000000000000000000000E308;
-    document.getElementById("infinite").innerHTML = smallNum;
+    var smallNum = -5000000000000000000000000000E308;       //Defining numeric variable to test for negative infinity case
+    document.getElementById("infinite").innerHTML = smallNum;   //Getting element to test for negative infinity case
 }
 
 function bool_True()    {
-    document.write(8 > 3);
+    document.write(8 > 3);      //Testing for boolean true statement
 }
 
 function bool_False()   {
-    document.write(10 < 5);
+    document.write(10 < 5);     //Testing for boolean false statement
 }
 
 function console_Log()      {
-    console.log(9 * 3);
+    console.log(9 * 3);         //Using console log to write the product to the console 
 }
 
 function type_Coer()    {
-    document.write("12" + 9);
+    document.write("12" + 9);   //Using coersion function to concatenate two different data types and write them to the screen
 }
 
 function bool_Console()     {
-    console.log(4 > 7);
+    console.log(4 > 7);         //Using console log to test for boolean true or false statement
 }
 
 function equals_Compare()   {
