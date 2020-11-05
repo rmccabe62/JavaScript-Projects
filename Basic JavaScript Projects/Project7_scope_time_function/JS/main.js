@@ -34,22 +34,22 @@ function Subtract_numbers_4()   {
 }
 
 function my_Age()      {
-    var x = 58;
-        if (x > 50)     {
-            document.getElementById("age").innerHTML = "I am so old!";
+    var x = 58;     //Defininng local variable
+        if (x > 50)     {       //if statement to check conditional statement
+            document.getElementById("age").innerHTML = "I am so old!";      //Retrieving the element and writing string to the screen
         }
         
 }
 
 function name_Saying()       {
-    username = document.getElementById("username").value;     
-       if (username == "Sally")     {
-           quoted = "Carpe Diem!";
+    username = document.getElementById("username").value;     //Getting the value of the element by id
+       if (username == "Sally")     {                       //Testing the conditional if statement to see if id is equal to given string
+           quoted = "Carpe Diem!";                          //Creating a string  if statement is true 
        }
        else    {
-           quoted= "Have a nice day!";
+           quoted= "Have a nice day!";                      //Creating a string if false
        }
-       document.getElementById("Please enter your first name: ").innerHTML = quoted;
+       document.getElementById("Please enter your first name: ").innerHTML = quoted;    //Retrieving an element by id and writing correct string
    }
 
 
