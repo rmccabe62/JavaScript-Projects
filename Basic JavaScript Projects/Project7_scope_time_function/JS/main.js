@@ -38,15 +38,19 @@ function my_Age()      {
         if (x > 50)     {
             document.getElementById("age").innerHTML = "I am so old!";
         }
-        function name_Saying()     {
-            if (name = "John")     {
-                document.getElementById("quoted").innerHTML = "Carpe Diem!";
-            }
-            else    {
-                document.write("Have a nice day!");
-            }
-        }
+        
 }
+
+function name_Saying()       {
+    username = document.getElementById("username").value;     
+       if (username == "Sally")     {
+           quoted = "Carpe Diem!";
+       }
+       else    {
+           quoted= "Have a nice day!";
+       }
+       document.getElementById("Please enter your first name: ").innerHTML = quoted;
+   }
 
 
 
