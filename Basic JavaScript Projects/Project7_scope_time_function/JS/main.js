@@ -49,7 +49,7 @@ function name_Saying()       {
        else    {
            quoted= "Have a nice day!";                      //Creating a string if false
        }
-       document.getElementById("Please enter your first name: ").innerHTML = quoted;    //Retrieving an element by id and writing correct string
+       document.getElementById("prompt").innerHTML = quoted;    //Retrieving an element by id and writing correct string
    }
 
 
