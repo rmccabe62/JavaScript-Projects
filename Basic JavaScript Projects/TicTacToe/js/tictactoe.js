@@ -14,11 +14,11 @@ let selectedSquares = [];
                     //This condition checks who's turn it is.
                     if (activePlayer === 'X')   
                         //If activePlayer is equal to 'X', the x.png is placed in HTML.
-                        select.style.backgroundImage = (TicTacToe/images/x.png);
+                        select.style.backgroundImage = 'url("images/x.png")';
                     //Active player may only be 'X' or 'O' so, if not 'X' it must be 'O'
                     } else  {
                         //If activePlayer is equal to 'O', the o.png is placed in HTML.
-                        select.style.backgroundImage = (TicTacToe/images/o.png);
+                        select.style.backgroundImage = 'url("images/o.png")';
                     }
                     //squareNumber and activePlayer are concantenated together and added to array.
                     selectedSquares.push(squareNumber + activePlayer);
@@ -30,7 +30,7 @@ let selectedSquares = [];
                         activePlayer = 'O';
                     //If active player is anything other than 'X'.
                     } else  {
-                        //Change yhe activePlayer to 'X'
+                        //Change the activePlayer to 'X'
                         activePlayer = 'X';
                     }
 
@@ -61,7 +61,7 @@ let selectedSquares = [];
                         pickASquare = String(Math.floor(Math.random() * 9));
                         //If the random number evaluates returns true, the square hasn't been selected yet.
                         if (placeXOrO(pickASquare)) {
-                            //This line calls he function.
+                            //This line calls the function.
                             placeXOrO(pickASquare);
                             //This changes our boolean and ends the loop.
                             success = true;
