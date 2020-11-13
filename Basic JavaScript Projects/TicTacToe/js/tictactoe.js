@@ -35,7 +35,7 @@ let selectedSquares = [];
                     }
 
                     //This function plays placement sound.
-                    audio('./media/labrador-barking-daniel_simon.mp3');
+                    audio('./media/place.mp3');
                     //This condition checks to see if it is computer's turn.
                     if (activePlayer === 'O') {
                         //This function disables clicking for computer choice.
