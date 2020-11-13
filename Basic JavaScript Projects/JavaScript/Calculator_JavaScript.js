@@ -113,7 +113,7 @@ const Calculator = {
      return
    }
    //ensures that AC clears the numbers from the Calculator
-   if (target.classList.contains('all-clear'))  {
+   if (target.classList.contains('All-clear'))  {
      Calculator_Reset();
      Update_Display();
      return;  
