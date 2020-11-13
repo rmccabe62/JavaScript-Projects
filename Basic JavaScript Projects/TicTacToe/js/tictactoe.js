@@ -127,7 +127,7 @@ function checkWinConditions() {
             //returned and our else if condition executes the drawWinLine function.
             if (a === true && b === true && c === true) {return true;  }
         }
-
+    }
         //This function makes our body element temporarily unclickable.
         function disableClick() {
             //This makes our body unclickable.
@@ -233,5 +233,5 @@ function checkWinConditions() {
             //This resets our array so it is empty and we can start over.
             selectedSquares = [];
         }
-}
+
 
