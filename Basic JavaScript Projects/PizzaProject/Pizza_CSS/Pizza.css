@@ -22,7 +22,7 @@ div {
 
 
 #menuBG     {
-    width: 400px;
+    width: 600px;
     height: 470px;
     margin: 10px auto;
     }
@@ -73,7 +73,7 @@ div {
 #btnOrder   {
     margin: 10px 0px 0px 100px;
     width: 100px;
-    display: block;
     height: 40px;
-    margin: 25px;
+    margin: 25px auto;
+    display: block;
     }
