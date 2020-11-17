@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="message">
+        <h2>Update my Information</h2>
+    <div class='content' id="message">        
+        <button type="button" onclick="LoadUpdate()">Update Info</button>
+    </div>
+    </div>
+    <script>
+         function LoadUpdate()   {
+            var update = new XMLHttpRequest();
+            update.onreadystatechange = function()  {        
+                if (update.readyState == 4 && update.status ==200)  {
+                    document.getElementById("message").innerHTML = update.responseText;
+                }
+            };
+            update.open("GET", "ready.info.txt", true);
+            update.send();
+        }
+    </script>
+</body>
+</html>
