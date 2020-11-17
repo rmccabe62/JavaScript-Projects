@@ -4,10 +4,12 @@
 <body>
     <div class="message">
         <h2>Update my Information</h2>
+    <!--Setting up event handler to receive updated information via ajax-->
     <div class='content' id="message">        
         <button type="button" onclick="LoadUpdate()">Update Info</button>
     </div>
     </div>
+    <!--Using ajax to send and receive updated information from server-->
     <script>
          function LoadUpdate()   {
             var update = new XMLHttpRequest();
