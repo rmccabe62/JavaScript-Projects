@@ -4,6 +4,16 @@ h1  {
     color: #00008B;
 }
 
+body    {
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-out   {
+    opacity: 0;
+    transition: none;
+}
+
 /* This container includes our table and our canvas. */
 .center-container   {
     /* This property sets the width of our container. */

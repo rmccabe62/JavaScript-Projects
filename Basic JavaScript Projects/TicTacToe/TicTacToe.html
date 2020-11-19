@@ -10,6 +10,7 @@
 </head>
 
 <body id='body'>
+    <script>document.body.className += ' fade-out';</script>
     <h1>TIC TAC TOE GAME</h1>
     <!--This container is needed to overlay our canvas over our table.-->
     <div class='center-container'>
@@ -33,7 +34,11 @@
             </tr>
         </table>
     </div>
-
+    
+    });
+    $(function()    {
+        $('body').removeClass('fade-out');
+    });
     
 </body>
 </html>
