@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Up Form</title>
+    <link rel="stylesheet" href="CSS/pop_up_form.css">
+    <script src="JS/pop_up_form.js"></script>
+</head>
+<body>
+    <p><strong>Note:</strong> The @keyframes rule is not upported by some browsers</p>
+    
+    
+        <img class="hover" src="images/signin.jpg" alt="sigin">
+       
+
+    <button class="open-button" onclick="openForm()">Open Form</button>
+    <div class="form-popup" id="popUp">
+        <form class= "form-container">
+            <h1>Login</h1>
+
+            <label for="username"><strong>Username</strong></label>
+            <input type="text" placeholder="Enter your username" name="user" required>
+            <label for="password"><strong>Password</strong></label>
+            <input type="text" placeholder="Enter your password" name="passwd" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    
+</body>
+</html>
