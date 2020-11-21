@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Stringify</title>
+</head>
+<body>
+    <h2>Convert a JavaScript object into a JSON string and send it to server</h2>
+    <p id="demo"></p>
+    <script>
+        var studentObj, studentJSON, text, obj;
+
+        //Storing data
+        studentObj = { "name":"Frank", "age":24, "city":"Boston"};
+        studentJSON = JSON.stringify(studentObj);
+        localStorage.setItem("testJSON", studentJSON);
+
+        //Retrieving data
+        text = localStorage.getItem("testJSON");
+        obj = JSON.parse(text);
+        document.getElementById("demo").innerHTML = obj.name;
+    </script>
+    <h2>JSON parse</h2>
+    <p>JSON.parse() parses a string, written in JSON format, and returns a JavaScript object.</p>
+    <p>The value of "city" is: </p>
+
+    <p id="city"></p>
+
+    <script>
+        var obj = JSON.parse('{"city":"Boston"}');
+        document.getElementById("city").innerHTML = obj.city;
+    </script>
+
+    <div id="result"></div>
+
+    <script>
+        //Check for browser support
+        if (typeof(Storage) !== "undefined")   {
+            //Store data
+           localStorage.setItem("age", "24");
+           //Retrieve data
+           document.getElementById("result").innerHTML =
+        localStorage.getItem("age");
+        } else {
+          document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+        }
+    </script>
+    
+</body>
+</html>
