@@ -32,12 +32,7 @@ function show() {
     /* This sets the task that was retrieved as a variable */
     var todos = get_todos();
 
-    /* This tells the browser how to display the todo 
-    array after an item has been removed*/
-    var buttons = document.getElementsByClassName('remove');
-    for (var i = 0; i < buttons.length; i++)    {
-        buttons[i].addEventListener('click', remove);
-    };
+    
 
     /* This sets up each task as an unordered list */
     var html = '<ul>';
@@ -50,6 +45,13 @@ function show() {
     html += '</ul>';
     /* This displays the task as a list */
     document.getElementById('todos').innerHTML = html;
+
+    /* This tells the browser how to display the todo 
+    array after an item has been removed*/
+    var buttons = document.getElementsByClassName('remove');
+    for (var i = 0; i < buttons.length; i++)    {
+        buttons[i].addEventListener('click', remove);
+    };
 
 
 }
